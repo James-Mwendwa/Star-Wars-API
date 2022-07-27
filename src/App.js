@@ -13,16 +13,15 @@ function App() {
     <BrowserRouter>
       <div className="app">
         <Header />
-
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/films" component={Films} />
-          <Route path="/cast" component={Cast} />
-          <Route path="/planets" component={Planets} />
-          <Route path="/species" component={Species} />
-          <Route path="/starship" component={Starship} />
-        </Switch>
       </div>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/films" component={Films} />
+        <Route path="/cast" component={Cast} />
+        <Route path="/planets" component={Planets} />
+        <Route path="/species" component={Species} />
+        <Route path="/starship" component={Starship} />
+      </Switch>
     </BrowserRouter>
   );
 }
